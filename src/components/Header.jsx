@@ -33,10 +33,10 @@ export default function Header() {
                 </div>
 
                 {/* Logo Centrado Absoluto en Navbar (Opción Original) */}
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center pointer-events-none z-0">
+                <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center pointer-events-none z-0">
                     <div
                         className={`shrink-0 bg-[#10B981] transition-all duration-300 ${isScrolled ? 'w-[100px] h-[100px]' : 'w-[120px] h-[120px]'}`}
-                        style={{ maskImage: 'url(/Logo.svg)', maskSize: 'contain', maskPosition: 'center', maskRepeat: 'no-repeat', WebkitMaskImage: 'url(/Logo.svg)', WebkitMaskSize: 'contain', WebkitMaskPosition: 'center', WebkitMaskRepeat: 'no-repeat' }}
+                        style={{ maskImage: 'url(/Favicon.svg)', maskSize: 'contain', maskPosition: 'center', maskRepeat: 'no-repeat', WebkitMaskImage: 'url(/Favicon.svg)', WebkitMaskSize: 'contain', WebkitMaskPosition: 'center', WebkitMaskRepeat: 'no-repeat' }}
                         aria-label="Logo de Capano Andrés"
                     />
                 </div>
