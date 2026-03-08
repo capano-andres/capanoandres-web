@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #EDF2F7;
+  /* Un tono sutilmente más oscuro (Slate 100 de Tailwind) para mayor reposo visual */
+  --color-brand-text: #2D3748;
+  --color-brand-primary: #10B981;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  margin: 0;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Escalar la interfaz completa un 15% en monitores de 1440px y un 25% en pantallas muy grandes (1920px+) */
+@media (min-width: 1440px) {
+  html {
+    font-size: 115%;
+    /* 18.4px base */
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 125%;
+    /* 20px base */
+  }
+}
