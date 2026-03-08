@@ -35,7 +35,7 @@ export default function Header() {
                 {/* Logo Centrado Absoluto en Navbar (Opción Original) */}
                 <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center pointer-events-none z-0">
                     <div
-                        className={`shrink-0 bg-[#10B981] transition-all duration-300 ${isScrolled ? 'w-[100px] h-[100px]' : 'w-[120px] h-[120px]'}`}
+                        className={`shrink-0 bg-[#10B981] transition-all duration-300 ${isScrolled ? 'w-[50px] h-[50px]' : 'w-[65px] h-[65px]'}`}
                         style={{ maskImage: 'url(/Favicon.svg)', maskSize: 'contain', maskPosition: 'center', maskRepeat: 'no-repeat', WebkitMaskImage: 'url(/Favicon.svg)', WebkitMaskSize: 'contain', WebkitMaskPosition: 'center', WebkitMaskRepeat: 'no-repeat' }}
                         aria-label="Logo de Capano Andrés"
                     />
