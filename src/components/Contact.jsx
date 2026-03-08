@@ -16,8 +16,11 @@ export default function Contact() {
         setIsSubmitting(true);
 
         try {
-            // Reemplaza 'TU_ACCESS_KEY' por la llave gratuita que obtienes en https://web3forms.com/ registrando capanoandres@outlook.com
-            const accessKey = '374aa3f1-40fc-4856-915f-d4049a330ed0'; // REGÍSTRATE Y PEGA TU KEY AQUÍ
+            const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+
+            if (!accessKey) {
+                throw new Error("API Key de Web3Forms no configurada.");
+            }
 
             const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",

@@ -42,9 +42,11 @@ npm install
 ```
 
 4. Configurar Web3Forms (Para el envío de emails de la sección Contacto):
-- Abre `src/components/Contact.jsx`
-- Ubica la variable `accessKey`
-- Reemplaza el valor por tu API Key de Web3Forms.
+- Duplica el archivo `.env.example` y renómbralo a `.env`.
+- Abre `.env` y coloca tu llave generada en Web3Forms:
+  ```env
+  VITE_WEB3FORMS_ACCESS_KEY=tu_api_key_aqui
+  ```
 
 5. Levantar el entorno de desarrollo:
 ```bash
