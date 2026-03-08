@@ -149,7 +149,7 @@ export default function Contact() {
                                         value={formData.painPoint}
                                         onChange={(e) => setFormData({ ...formData, painPoint: e.target.value })}
                                         className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-[#2D3748] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#10B981]/50 focus:border-[#10B981] transition-colors resize-none"
-                                        placeholder="Desarrollamos el reporte de ventas mensual cruzando 4 hojas de Excel..."
+                                        placeholder="Paso horas todos los meses cruzando datos de varias hojas de Excel para armar un solo reporte..."
                                     ></textarea>
                                 </div>
 

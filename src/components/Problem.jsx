@@ -25,10 +25,10 @@ export default function Problem() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 <div className="max-w-4xl mx-auto text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-[#2D3748] mb-6">
-                        El trabajo manual administrativo está frenando el potencial de tu negocio.
+                        El trabajo manual en Excel está frenando el potencial de tu negocio.
                     </h2>
                     <p className="text-xl text-[#2D3748]/70 leading-relaxed">
-                        Copiar, pegar y cruzar planillas interminables... Estas tareas rutinarias no solo agotan tu energía, sino que te desconectan de lo importante. Si la operación de tu empresa depende de procesos manuales lentos, estás perdiendo oportunidades de crecimiento y trabajando más horas de las necesarias.
+                        Copiar, pegar y cruzar interminables planillas de Excel... Estas tareas rutinarias no solo agotan tu energía, sino que te desconectan de lo importante. Si la operación de tu empresa depende de archivos desactualizados y procesos lentos, estás perdiendo oportunidades de crecimiento y trabajando más horas de las necesarias.
                     </p>
                 </div>
 

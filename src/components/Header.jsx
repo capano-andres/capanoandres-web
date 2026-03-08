@@ -24,15 +24,13 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center">
                 {/* Logo minimalista */}
                 <div className="flex items-center gap-3 cursor-pointer">
-                    <div className="w-8 h-8 rounded-lg bg-[#10B981] flex items-center justify-center">
-                        <span className="text-white font-bold text-xl leading-none">A</span>
-                    </div>
+                    <img src="/Logo.jpg" alt="Logo de Capano Andrés" className="w-10 h-10 object-contain rounded-lg" />
                     <div className="flex flex-col">
                         <span className="text-[#2D3748] font-bold text-lg tracking-tight leading-none">
                             Capano Andrés
                         </span>
                         <span className="text-[#10B981] font-medium text-xs mt-1">
-                            Limpieza de Datos y Procesos ETL
+                            Limpieza de Datos y Automatización (Extracción, Transformación y Carga)
                         </span>
                     </div>
                 </div>

@@ -53,10 +53,10 @@ export default function Solution() {
                                 <Sparkles className="text-[#10B981] w-7 h-7" />
                             </div>
                             <h3 className="text-2xl font-bold text-[#2D3748] mb-4">
-                                Automatización de Flujos (Procesos ETL)
+                                Automatización (Extracción, Transformación y Carga)
                             </h3>
                             <p className="text-[#2D3748]/70 text-lg leading-relaxed mb-6">
-                                Conecto tus herramientas. Extraigo la información de donde esté, la transformo según las reglas de tu negocio y la cargo automáticamente donde la necesitas. Todo funciona en segundo plano, sin intervención manual.
+                                Conecto tus herramientas y hojas de Excel. Extraigo la información de donde esté, la organizo según las reglas de tu negocio y la cargo automáticamente donde la necesitas. Todo funciona en segundo plano, sin trabajo manual.
                             </p>
                             <ul className="space-y-3">
                                 <li className="flex items-center gap-3 text-[#2D3748]/80">
