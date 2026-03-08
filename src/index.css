@@ -7,6 +7,12 @@
   --color-brand-primary: #10B981;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  /* Ajuste para el header fijo */
+}
+
 body {
   background-color: var(--color-brand-bg);
   color: var(--color-brand-text);

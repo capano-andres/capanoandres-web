@@ -16,27 +16,33 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${isScrolled
-                ? 'bg-white/90 backdrop-blur-md shadow-sm py-3'
-                : 'bg-transparent py-5'
+            className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled
+                ? "bg-white/90 backdrop-blur-md shadow-sm py-2"
+                : "bg-transparent py-4"
                 }`}
         >
-            <div className="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center">
-                {/* Logo minimalista */}
-                <div className="flex items-center gap-3 cursor-pointer">
-                    <img src="/Logo.jpg" alt="Logo de Capano Andrés" className="w-10 h-10 object-contain rounded-lg" />
-                    <div className="flex flex-col">
-                        <span className="text-[#2D3748] font-bold text-lg tracking-tight leading-none">
-                            Capano Andrés
-                        </span>
-                        <span className="text-[#10B981] font-medium text-xs mt-1">
-                            Limpieza de Datos y Automatización (Extracción, Transformación y Carga)
-                        </span>
-                    </div>
+            <div className="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center relative min-h-[3.5rem] md:min-h-[4rem]">
+                {/* Text Logo (Left) */}
+                <div className="flex flex-col justify-center cursor-pointer relative z-10 text-left">
+                    <span className="text-[#2D3748] font-bold text-lg md:text-xl lg:text-2xl tracking-tight leading-none mb-1">
+                        Capano Andrés
+                    </span>
+                    <span className="text-[#10B981] font-medium text-[10px] md:text-sm lg:text-base leading-none">
+                        Limpieza de Datos y Automatización
+                    </span>
+                </div>
+
+                {/* Logo Centrado Absoluto en Navbar (Opción Original) */}
+                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center pointer-events-none z-0">
+                    <div
+                        className={`shrink-0 bg-[#10B981] transition-all duration-300 ${isScrolled ? 'w-[100px] h-[100px]' : 'w-[120px] h-[120px]'}`}
+                        style={{ maskImage: 'url(/Logo.svg)', maskSize: 'contain', maskPosition: 'center', maskRepeat: 'no-repeat', WebkitMaskImage: 'url(/Logo.svg)', WebkitMaskSize: 'contain', WebkitMaskPosition: 'center', WebkitMaskRepeat: 'no-repeat' }}
+                        aria-label="Logo de Capano Andrés"
+                    />
                 </div>
 
                 {/* Navegación Desktop */}
-                <nav className="hidden md:flex items-center gap-8">
+                <nav className="hidden md:flex items-center gap-8 justify-end">
                     <a href="#solucion" className="text-[#2D3748]/80 hover:text-[#10B981] font-medium transition-colors">Servicios</a>
                     <a href="#beneficios" className="text-[#2D3748]/80 hover:text-[#10B981] font-medium transition-colors">Beneficios</a>
                     <a

@@ -5,6 +5,7 @@ import Problem from './components/Problem';
 import Solution from './components/Solution';
 import Benefits from './components/Benefits';
 import Contact from './components/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
           <p>© {new Date().getFullYear()} Capano Andrés. Transformando datos en decisiones.</p>
         </div>
       </footer>
+
+      <ScrollToTop />
     </div>
   );
 }
