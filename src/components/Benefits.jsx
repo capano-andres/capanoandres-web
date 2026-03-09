@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, ShieldCheck, HeartHandshake } from 'lucide-react';
+import { TrendingUp, ShieldCheck, Target } from 'lucide-react';
 
 export default function Benefits() {
     const benefits = [
@@ -14,9 +14,9 @@ export default function Benefits() {
             description: 'Toma decisiones basadas en datos 100% confiables y precisos. Elimina los descuidos provocados por el cansancio y el trabajo repetitivo.',
         },
         {
-            icon: <HeartHandshake className="w-10 h-10 text-emerald-500" />,
-            title: 'Paz mental absoluta',
-            description: 'Cierres de mes fluidos, procesos transparentes y sin sobresaltos de última hora. Recupera la tranquilidad en tu gestión diaria.',
+            icon: <Target className="w-10 h-10 text-emerald-500" />,
+            title: 'Control estratégico total',
+            description: 'Procesos transparentes y sin sobresaltos. Obtén la visibilidad y previsibilidad que necesitas para dirigir tu negocio con confianza.',
         }
     ];
 

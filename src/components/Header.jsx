@@ -23,7 +23,7 @@ export default function Header() {
         >
             <div className="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center relative min-h-[3.5rem] md:min-h-[4rem]">
                 {/* Text Logo (Left) */}
-                <div className="flex flex-col justify-center cursor-pointer relative z-10 text-left">
+                <div className="flex flex-col justify-center cursor-pointer relative z-10 text-left transition-transform duration-200 hover:scale-105">
                     <span className="text-[#2D3748] font-bold text-lg md:text-xl lg:text-2xl tracking-tight leading-none mb-1">
                         Capano Andrés
                     </span>
@@ -33,7 +33,7 @@ export default function Header() {
                 </div>
 
                 {/* Logo Centrado Absoluto en Navbar (Opción Original) */}
-                <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center pointer-events-none z-0">
+                <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center pointer-events-auto z-0 cursor-pointer transition-transform duration-200 hover:scale-110">
                     <div
                         className={`shrink-0 bg-[#10B981] transition-all duration-300 ${isScrolled ? 'w-[50px] h-[50px]' : 'w-[65px] h-[65px]'}`}
                         style={{ maskImage: 'url(/Favicon.svg)', maskSize: 'contain', maskPosition: 'center', maskRepeat: 'no-repeat', WebkitMaskImage: 'url(/Favicon.svg)', WebkitMaskSize: 'contain', WebkitMaskPosition: 'center', WebkitMaskRepeat: 'no-repeat' }}
@@ -47,7 +47,7 @@ export default function Header() {
                     <a href="#beneficios" className="text-[#2D3748]/80 hover:text-[#10B981] font-medium transition-colors">Beneficios</a>
                     <a
                         href="#contacto"
-                        className="text-sm px-5 py-2.5 rounded-full font-medium text-[#10B981] border border-[#10B981]/30 hover:bg-[#10B981]/10 transition-colors shadow-sm"
+                        className="text-sm px-5 py-2.5 rounded-full font-medium text-[#10B981] border border-[#10B981]/30 hover:bg-[#10B981]/10 hover:scale-105 transition-all shadow-sm"
                     >
                         Agendar Consulta
                     </a>

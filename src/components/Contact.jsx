@@ -125,7 +125,7 @@ export default function Contact() {
 
                                 <div>
                                     <label htmlFor="email" className="block text-sm font-medium text-[#2D3748]/70 mb-2">
-                                        Correo profesional
+                                        Mail
                                     </label>
                                     <input
                                         type="email"
@@ -149,14 +149,13 @@ export default function Contact() {
                                         value={formData.painPoint}
                                         onChange={(e) => setFormData({ ...formData, painPoint: e.target.value })}
                                         className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-[#2D3748] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#10B981]/50 focus:border-[#10B981] transition-colors resize-none"
-                                        placeholder="Paso horas todos los meses cruzando datos de varias hojas de Excel para armar un solo reporte..."
                                     ></textarea>
                                 </div>
 
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="group w-full flex items-center justify-center gap-2 py-4 px-8 rounded-xl bg-[#10B981] text-white font-medium hover:bg-emerald-600 hover:shadow-lg hover:shadow-[#10B981]/20 transition-all active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed"
+                                    className="group w-full flex items-center justify-center gap-2 py-4 px-8 rounded-xl bg-[#10B981] text-white font-medium hover:bg-emerald-600 hover:shadow-lg hover:shadow-[#10B981]/20 hover:scale-105 transition-all active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed"
                                 >
                                     {isSubmitting ? 'Enviando...' : 'Solicitar Propuesta Gratuita'}
                                     {!isSubmitting && <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />}
